@@ -1,0 +1,159 @@
+﻿
+Clash of Beast - My Framer Site
+DENN
+Works
+About
+Contact
+DENN
+Works
+About
+Contact
+DENN
+ROLE:
+Game Designer (Technical Design | System &amp; Economy Design)
+STUDIO:
+Ubisoft
+YEAR:
+2025
+rm -rf src/app/page.module.css
+Clash of Beast
+about.
+PlaystoreLink
+Clash of Beasts 
+is a strategy RPG and tower defense mobile game where players collect and train beasts to attack enemy bases while also fortifying their own with defensive towers.
+Contribution: [System Design] Engagement Driven Clan Event Progression System
+Challenge
+Our studio needed to elevate the performance of our Clan Events, specifically targeting low 
+session times
+ and 
+player engagement
+ metrics. We identified that while the core gameplay was solid, players lacked a compelling long-term incentive to stay logged in during the event window. We were tasked to design a "sticky" metagame layer that would reward players for their time without disrupting the core game loop.
+My Approach
+To solve this, I designed a symbiotic system connecting specific player actions to a tiered reward structure. My process focused on two key areas: the User Experience (UX) flow and Technical efficiency.
+1. Designing the Progression Loop (UX &amp; Mechanics)
+ I conceptualized a 
+Metagame Quest System
+ linked to a "Season Pass" style progression.
+Behavioral Design:
+ I mapped user flows to ensure that high value in-game actions (e.g., clan assistance, objective captures) directly contributed to quest progress.
+The Reward Structure:
+ I structured the Season Pass with a finite number of tiers to create reachable, satisfying goals. This was designed to combat player fatigue by providing clear "finish lines."
+Visualizing the Flow:
+ I created wireframes and flowcharts to demonstrate how a player transitions from performing an action -&gt; receiving a notification -&gt; claiming a reward -&gt; unlocking the next tier.
+Wireframe board for the new system.
+2. Technical Adaptation:
+ Rather than building a backend architecture from scratch, I investigated our studioâ€™s legacy projects.
+I identified a compatible quest backend from a previous title.
+I adapted the logic of that system to fit the constraints of our Clan Event.
+This approach significantly reduced estimated engineering time and allowed us to focus resources on the frontend UX.
+The Results
+The design was successfully greenlit and moved into full production, with engineering validating the adapted backend approach as a resource-efficient solution.
+Status Update (Nov 2025):
+ While the feature was fully designed and in development, the release has been paused due to wider studio restructuring. However, the modular design of the system remains a viable asset for future integration or other game modes.
+My Contributions to the Project
+Contribution: [Technical Design|Content Design] Designing a new beast for Halloween
+Challenge
+Beasts were the main element of play in our game, and thus the major part of content was driven by unlocking new beasts. I was tasked with designing and adding two new beasts for Halloween event. It wasn't just a design task but it required technical knowledge as we were limited by availbility of vfx artist thus we had to tinker around the existing vfx to create new Beast Spells. 
+My Approach
+I had to analyze the gameplay meta around the beasts, to identify stale gameplay patterns and try to change meta.
+I designed the beast spell kits and core identities specifically to distrupt these patterns. Since the game wasn't relying too much on tank and a particular nature of beast, I decided to add a spell that made sure that the beast would give more shield to other beast that share's its nature.
+I partnered with a Senior Game Designer who had more  historical context on the project. We combined my fresh mechanical concepts with his deep understanding of the game's math and balance history to fine-tune the stats.
+Our beast for halloween with just model and animations.
+Thematic of the beast: 
+Since this was a Halloween beast, our design had to made sure that it fits the vibe of the event. 
+Technicality (VFX) : 
+When it came to vfx , it was our task to implement it. I had to tinker around the existing vfx in Unity Engine to make sure it works with our new beast and its animation. 
+Technicality (Scripting)
+ : The scripting flow of each beast was done in JSON, where the game designers decided each state and action of the beast. With the support of the Senior Game Designer I was able to get my hands on with script and create all the spells required for the beast. â€‹
+Solution and Result
+A positive feedback from the community: 
+The Halloween event had a positive impact on the players. 
+Contribution: [Game Design | Narrative Design]: Transforming Onboarding 
+Challenge
+I was given a task to boost d0 engagement with our clan event. In my speculation The Clan Event system was functional but dry. Players knew *how* to click the buttons, but they didn't understand *why* they should care. The existing First Time User Experience (FTUE) lacked fiction, stakes, and emotional hooks.
+My Approach
+I analyzed the feature and identified the core missing piece: Context. I redesigned the FTUE to answer three questions immediately:
+1. What has happened?
+2. What should I do next?
+3. Why does this matter?
+A narrative exploration:
+Taking inspiration from best-in-class titles like 
+Cookie Run: Kingdom,
+ I structured the onboarding as a rhythm of 
+Narrative Beat
+ -&gt; 
+Gameplay Action
+ -&gt;
+ Narrative Payoff.
+ This prevented the dreaded "text dump" and kept players engaged.
+Glimpse of Wireframes to showcase narrative steps, The doc consisted of 66 frames.
+Solution and Result
+Due to the restructuring of the studio, the feature was paused during its development stage. 
+The team was happy on the notion of exploring the narrative potential of the game. They felt the thematic exploration of systems was an untapped potential.
+Contribution: [Economy Design] Balancing the Drop Rate and the beast stats.
+While working on the beast balance for this project my main goal was to ensure the "Power Economy" remains healthy. 
+Due to NDA I'm not allowed to show my spread sheet but I can run you down by my logic flow
+Define Archetype:
+ Tank, Warrior, Rogue or Mage.
+Define Beast power anchor:
+ I treat "Beast Power" as the summary metric. It is the limit. If the target Beast Power at Level 100 is 50,000, then the sum of all other stats (weighted by value) cannot exceed that mathematical limit.
+The Progression Curve:
+ How does the beast grow. Different beasts had different progression curve depending upon their goals. 
+The Economic Cost (XP):
+ XP is the 
+sink.
+Rarity Balancing
+To make this beast fit into the economy, I would apply a multiplier based on its rarity (Common, Rare, Legendary, Mythic).
+E.g. Common Beast:
+ 1.0Ã—Base Stats
+E.g. Legendary Beast:
+ 1.5Ã—Base Stats (but requires 2.5Ã—XP to level).
+more to explore.
+Show More
+Growtopia
+Growtopia
+MyWhoosh
+MyWhoosh
+Linkedin
+Twitter
+Behance
+Curious about what we can create together? 
+Letâ€™s bring fun experiences to life!
+Get in Touch
+Available For Work
++971 56294 6369 
+dennchenls@gmail.com
+Designed &amp; Developed
+by 
+Dennchen Lama
+All rights reserved,
+DENN Â©2024
+Linkedin
+Twitter
+Behance
+Curious about what we can create together? 
+Letâ€™s bring fun experiences to life!
+Get in Touch
+Available For Work
++971 56294 6369 
+dennchenls@gmail.com
+Designed &amp; Developed
+by 
+Dennchen Lama
+All rights reserved,
+DENN Â©2024
+Linkedin
+Twitter
+Behance
+Curious about what we can create together? 
+Letâ€™s bring fun experiences to life!
+Get in Touch
+Available For Work
++971 56294 6369 
+dennchenls@gmail.com
+Designed &amp; Developed
+by 
+Dennchen Lama
+All rights reserved, YUYA Â©2024
+Create a free website with Framer, the website builder loved by startups, designers and agencies.
+

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MyWhoosh Case Study | Dennchen Lama</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#f9f9f8",
+                        "on-surface": "#2f3333",
+                        "on-surface-variant": "#5b605f",
+                        "surface-container": "#eceeed",
+                        "surface-container-low": "#f3f4f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#dfe3e2",
+                        "primary": "#4958ac",
+                        "primary-container": "#96a5ff",
+                        "on-primary": "#faf8ff",
+                        "on-primary-container": "#0f2176",
+                        "secondary": "#006b64",
+                        "secondary-container": "#8ef4e9",
+                        "on-secondary-container": "#005c56",
+                        "tertiary": "#70557c",
+                        "tertiary-container": "#f1cefc",
+                        "on-tertiary-container": "#5d4369",
+                        "outline": "#777c7b",
+                        "outline-variant": "#afb3b2",
+                        "background": "#f9f9f8",
+                        "on-background": "#2f3333",
+                        "error": "#a8364b",
+                        "error-container": "#f97386",
+                        "on-error": "#fff7f7",
+                        "on-error-container": "#6e0523",
+                        "inverse-surface": "#0c0f0e",
+                        "inverse-on-surface": "#9c9d9c",
+                        "inverse-primary": "#96a5ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f9f9f8;
+            background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            background-attachment: fixed;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            background: rgba(249, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+
+        .ink-shadow {
+            box-shadow: 0 20px 40px rgba(15, 33, 118, 0.06);
+        }
+    </style>
+</head>
+
+<body class="font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="sticky top-0 z-50 w-full glass-nav">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4 w-full">
+            <a href="index.html"
+                class="flex items-center gap-2 font-label uppercase tracking-widest text-xs font-bold text-on-surface-variant hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                BACK
+            </a>
+            <div class="text-2xl font-black text-on-surface tracking-tighter font-headline">
+                Home
+            </div>
+            <a href="mailto:Dennchenls@gmail.com"
+                class="font-label uppercase tracking-widest text-xs font-bold text-primary hover:text-primary-container transition-all duration-300">
+                CONTACT
+            </a>
+        </div>
+    </nav>
+
+    <!-- Full Width Background Banner -->
+    <div class="absolute top-0 left-0 w-full h-[60vh] md:h-[80vh] overflow-hidden -z-10 bg-surface-container-lowest">
+        <img src="Files/MyWHoosh/MyWhooshBanner.jpg" alt="MyWhoosh Hero Banner"
+            class="w-full h-full object-cover opacity-100 blur-[0px] scale-105">
+        <!-- Gradient to blend the image seamlessly into the page background -->
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-surface to-transparent"></div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-8 pt-48 md:pt-[50vh] pb-12 space-y-32 relative z-10">
+        <!-- Hero Section Content -->
+        <header class="space-y-12">
+            <div class="space-y-8">
+                <div class="flex flex-wrap gap-4">
+                    <span
+                        class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-[10px] font-bold tracking-widest font-label uppercase">MyWhoosh</span>
+                    <span
+                        class="px-4 py-1.5 bg-surface-container text-on-surface-variant rounded-full text-[10px] font-bold tracking-widest font-label uppercase">2023-2025</span>
+                </div>
+                <h1
+                    class="text-6xl md:text-8xl font-black font-headline text-on-surface tracking-tighter uppercase leading-none">
+                    MyWhoosh
+                </h1>
+
+                <p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-4xl leading-relaxed mt-8">
+                    MyWhoosh is a premium, free-to-play indoor cycling application that blends gamification with
+                    realistic simulation. As the official virtual cycling partner for the UCI World Championships, it
+                    offers an unparalleled competitive platform worldwide.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 mt-12 bg-surface-container-low p-8 rounded-lg">
+                    <div class="md:col-span-1 space-y-2">
+                        <h4 class="font-label text-xs text-on-surface-variant uppercase tracking-widest font-bold">Role
+                        </h4>
+                        <p class="text-on-surface font-semibold font-body">Senior Game Designer</p>
+                    </div>
+                    <div class="md:col-span-3 space-y-2">
+                        <h4 class="font-label text-xs text-on-surface-variant uppercase tracking-widest font-bold">Core
+                            Disciplines</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="bg-surface-container-lowest ink-shadow text-on-surface-variant text-xs px-4 py-1.5 rounded-full font-semibold">Gamification</span>
+                            <span
+                                class="bg-surface-container-lowest ink-shadow text-on-surface-variant text-xs px-4 py-1.5 rounded-full font-semibold">System
+                                Design</span>
+                            <span
+                                class="bg-surface-container-lowest ink-shadow text-on-surface-variant text-xs px-4 py-1.5 rounded-full font-semibold">Economy
+                                Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section 1: Arcade Design (NEW ORDER & EXPANDED) -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">01 •
+                    Gamification</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Zombie Arcade & UCI
+                    Adaptations</h2>
+            </div>
+
+            <!-- Arcade Gamification Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-surface-container-low p-8 md:p-12 rounded-lg">
+                <!-- Left Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface">The Pivot to Gamification</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        To retain casual riders who found pure simulation intimidating, I proposed and designed <strong
+                            class="text-on-surface">"Arcade Mode,"</strong> a suite of physics-based mini-games. One
+                        standout release was <strong class="text-on-surface">"Zombies,"</strong> where users performed
+                        HIIT workouts framed as desperate chases from zombie hordes.
+                    </p>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        The mechanic was simple but effective: speed equals safety. As waves progressed, the required
+                        speed increased.
+                    </p>
+                    <figure class="pt-4">
+                        <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest">
+                            <img src="Files/MyWHoosh/MyWHoosh_prototype.jpg" alt="Screenshot of early prototype"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <figcaption
+                            class="mt-4 text-center text-xs font-label text-on-surface-variant tracking-wider uppercase font-bold">
+                            Screenshot of early prototype
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Right Column: Methods and Steps -->
+                <div class="lg:col-span-7 space-y-8">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">Execution Strategy</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary mt-1">
+                                <span class="material-symbols-outlined text-sm">design_services</span>
+                            </div>
+                            <div>
+                                <h4 class="text-on-surface font-bold font-headline mb-1">Design & Mechanics</h4>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">Defined the core loop
+                                    (chased-by-horde survival), the wave-by-wave escalation curve, success/failure
+                                    conditions, scoring model, and leaderboard submission.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary mt-1">
+                                <span class="material-symbols-outlined text-sm">route</span>
+                            </div>
+                            <div>
+                                <h4 class="text-on-surface font-bold font-headline mb-1">UX Journey</h4>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">Partnered with the UX team to
+                                    map the end-to-end flow: mode discovery, pre-ride setup, in-ride HUD
+                                    (distance-to-horde, wave indicator), catch/fail states, and summary screens.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary mt-1">
+                                <span class="material-symbols-outlined text-sm">balance</span>
+                            </div>
+                            <div>
+                                <h4 class="text-on-surface font-bold font-headline mb-1">Economy & Conditions</h4>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">Determined points pacing,
+                                    reward thresholds, and anti-exploit rules (e.g., preventing stalling and enforcing
+                                    consistent effort windows) to keep play fair and motivating.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary mt-1">
+                                <span class="material-symbols-outlined text-sm">construction</span>
+                            </div>
+                            <div>
+                                <h4 class="text-on-surface font-bold font-headline mb-1">Prototype with Devs</h4>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">Worked day-to-day with
+                                    engineers to stand up a gameplay prototype. Iterated on readability and added quick
+                                    debug hooks for wave speed, spawn rate, and scoring.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-[#006b64] mt-1">
+                                <span class="material-symbols-outlined text-sm">check_circle</span>
+                            </div>
+                            <div>
+                                <h4 class="text-on-surface font-bold font-headline mb-1">Greenlight to Production</h4>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">Coordinated final assets,
+                                    locked tuning, integrated performance constraints, and instrumented analytics events
+                                    to support post-launch balancing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure class="pt-4">
+                        <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest border border-outline-variant/10">
+                            <img src="Files/MyWHoosh/MyWhoosh_Zombie Tool.jpg" alt="Python Simulation Tool"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <figcaption
+                            class="mt-4 text-center text-xs font-label text-on-surface-variant tracking-wider uppercase font-bold">
+                            I created a tool in python to simulate and balance the survivability rate on each level
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- UCI Sub-section -->
+            <div class="bg-surface-container-lowest ink-shadow rounded-lg overflow-hidden mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8 md:p-12 md:bg-surface-container-lowest bg-surface-container-lowest space-y-6">
+                        <span
+                            class="inline-block px-3 py-1 bg-error-container/20 text-error rounded-full text-[10px] font-bold tracking-widest font-label uppercase">Global
+                            Esports</span>
+                        <h3 class="font-headline text-3xl font-bold text-on-surface mb-2">UCI World Championship 2025
+                            Adaptation</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            The "Zombies" concept proved so successful that the Director of E-sports commissioned me to
+                            adapt it for the 2025 UCI World Championships. I evolved the mechanic into a high-stakes
+                            Sci-Fi <strong class="text-on-surface">"Elimination Race"</strong> featuring high-tech
+                            drones, tailoring the aesthetic for a professional broadcast audience.
+                        </p>
+                    </div>
+
+                    <div class="p-8 md:p-12 bg-surface-container-low space-y-8 relative flex items-center">
+                        <img src="Files/MyWHoosh/MyWhoosh_UCI ScreenShot.png" alt="UCI Screenshot"
+                            class="w-full rounded-lg ink-shadow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Slots Placeholder -->
+            <div class="pt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div
+                    class="bg-surface-container-low p-6 rounded-lg space-y-4 ink-shadow border border-outline-variant/10">
+                    <h3 class="font-headline text-lg font-bold text-on-surface">Zombie Arcade Trailer</h3>
+                    <div class="w-full aspect-video rounded-lg overflow-hidden border border-outline-variant/10 ink-shadow">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/upS5VeTfg0Q" title="Zombie Arcade Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-container-low p-6 rounded-lg space-y-4 ink-shadow border border-outline-variant/10">
+                    <h3 class="font-headline text-lg font-bold text-on-surface">UCI Esports Finals Stream</h3>
+                    <div class="w-full aspect-video rounded-lg overflow-hidden border border-outline-variant/10 ink-shadow">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/y4cUZ80P2bY?start=11716" title="UCI Esports Finals Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Data-Driven Culture -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">02 • Data-Driven
+                    Design</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Establishing a Data-Driven
+                    Culture</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-surface-container-low p-8 md:p-12 rounded-lg">
+                <!-- Challenge -->
+                <div
+                    class="lg:col-span-4 space-y-6 bg-surface-container-lowest p-8 rounded-lg ink-shadow h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-headline text-2xl font-bold text-on-surface mb-4">The Challenge</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            The team lacked a unified approach to <span
+                                class="text-on-surface font-semibold underline decoration-primary-container decoration-4 underline-offset-4">data-driven
+                                decision-making</span>, which was spotted by our lead game designer. He then gave me the
+                            responsibility to bring in data pipelines for data-driven design.
+                        </p>
+                    </div>
+
+                    <div class="pt-6">
+                        <h3 class="font-headline text-xl font-bold text-primary mb-3">Impact</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                            We successfully mapped the First Time User Experience (FTUE) via <strong
+                                class="text-on-surface">Sankey diagrams</strong>, identifying critical drop-off points
+                            that were previously invisible.
+                        </p>
+                        <span class="material-symbols-outlined text-4xl text-primary/50">query_stats</span>
+                    </div>
+                </div>
+
+                <!-- Approach -->
+                <div class="lg:col-span-8 space-y-8">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">My Role</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        I led the transition to data-driven design, collaborating with the UX Lead to build the
+                        studio's first comprehensive design dashboard. Plus worked with project managers to create
+                        heatmaps on major screens.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary mt-1">
+                                <span class="material-symbols-outlined text-sm">plumbing</span>
+                            </div>
+                            <div>
+                                <h4 class="text-on-surface font-bold font-headline mb-1">Pipeline Ownership</h4>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">Defined the KPI requirements
+                                    and technical telemetry needed for every new feature, acting as the bridge between
+                                    design, production, and engineering.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary mt-1">
+                                <span class="material-symbols-outlined text-sm">event_repeat</span>
+                            </div>
+                            <div>
+                                <h4 class="text-on-surface font-bold font-headline mb-1">Process Improvement</h4>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">Instituted monthly "Data
+                                    Kickoffs" to review quantitative and qualitative metrics with feature owners,
+                                    ensuring future iterations were grounded in reality.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="font-headline text-xl font-bold text-on-surface mt-8 mb-4">Tools Used</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-surface-container-lowest p-6 rounded-lg ink-shadow border border-outline-variant/10">
+                            <h5 class="text-primary font-bold font-headline mb-2 text-sm">SQL</h5>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">Wrote custom queries to extract rider session data, cohort behaviors, and feature-adoption funnels</p>
+                        </div>
+                        <div class="bg-surface-container-lowest p-6 rounded-lg ink-shadow border border-outline-variant/10">
+                            <h5 class="text-primary font-bold font-headline mb-2 text-sm">Google Analytics</h5>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">Tracked acquisition channels and top-level FTUE conversion rates</p>
+                        </div>
+                        <div class="bg-surface-container-lowest p-6 rounded-lg ink-shadow border border-outline-variant/10">
+                            <h5 class="text-primary font-bold font-headline mb-2 text-sm">Kibana</h5>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">Visualized server-side logs to identify latency-related drop-offs during rides</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 mt-4 border-t border-outline-variant/10">
+                        <figure>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest border border-outline-variant/10 aspect-[4/3]">
+                                    <img src="Files/MyWHoosh/MyWhooshSankeyDashboard.png" alt="Sankey Dashboard" class="w-full h-full object-cover">
+                                </div>
+                                <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest border border-outline-variant/10 aspect-[4/3]">
+                                    <img src="Files/MyWHoosh/MyWhooshHeatMapDashboard.png" alt="HeatMap Dashboard" class="w-full h-full object-cover">
+                                </div>
+                                <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest border border-outline-variant/10 aspect-[4/3]">
+                                    <img src="Files/MyWHoosh/MyWhooshSegmentationDashboard.png" alt="Segmentation Dashboard" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <figcaption class="mt-6 text-center text-xs font-label text-on-surface-variant tracking-wider uppercase font-bold">
+                                Actual dashboard data blurred for confidentiality.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: LiveOps Pipeline -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">03 • LiveOps
+                    Engineering</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Making the LiveOps Pipeline
+                    Better</h2>
+            </div>
+
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-surface-container-lowest p-8 md:p-12 rounded-lg ink-shadow">
+                <div class="flex flex-col gap-8">
+                    <div class="space-y-4">
+                        <h3 class="font-headline text-2xl font-bold text-on-surface">The Challenge</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            Our game's LiveOps operation was hitting a wall. At roughly <strong
+                                class="text-on-surface">10 events per month</strong>, every single event was a
+                            hand-crafted deployment:
+                        </p>
+                        <div class="bg-surface-container-low p-6 rounded-lg">
+                            <p class="text-sm text-on-surface-variant italic leading-relaxed">
+                                Designer writes a spec doc &rarr; Engineer manually implements it &rarr; Manual QA pass
+                                &rarr; Deploy via build push or manual config upload.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface-container-low p-8 rounded-lg">
+                        <h3 class="font-headline text-xl font-bold text-primary mb-4">The Results</h3>
+                        <div class="space-y-3 text-sm text-on-surface-variant">
+                            <div
+                                class="grid grid-cols-3 gap-2 font-label text-[10px] uppercase tracking-widest font-bold text-on-surface pb-2">
+                                <span>Metric</span>
+                                <span>Before</span>
+                                <span>After</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 text-xs">
+                                <span>Events / month</span>
+                                <span>~10</span>
+                                <span class="text-on-surface font-bold">100–120 (10×)</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 text-xs">
+                                <span>Eng. hours / event</span>
+                                <span>8–16 hrs</span>
+                                <span class="text-on-surface font-bold">~0 (self-serve)</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 text-xs">
+                                <span>Deploy errors / mo</span>
+                                <span>4–6</span>
+                                <span class="text-on-surface font-bold">2–3 (~50%↓)</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 text-xs">
+                                <span>Issue detection</span>
+                                <span>Hours</span>
+                                <span class="text-on-surface font-bold">
+                                    < 15 min</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 text-xs">
+                                <span>Kill broken event</span>
+                                <span>30–60 min</span>
+                                <span class="text-on-surface font-bold">
+                                    < 5 min (90%↓)</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 text-xs">
+                                <span>Player incidents</span>
+                                <span>~2 / month</span>
+                                <span class="text-on-surface font-bold">
+                                    < 1 / month</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">My Role</h3>
+
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">view_module</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline">Parameterized Templates</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Decomposed all events into
+                                12–15 parameterized templates so a designer/producer could configure scoring, rewards,
+                                tracks, targeting, and UI skin entirely through a config file.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">verified</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline">Automated Validation Pipeline</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Wrote all the checks for each
+                                parameter that could flag a broken event config. Every config passed through an
+                                automated gate that checked schema validity, ran economy simulations, detected
+                                schedule/UI-slot conflicts, and verified CDN asset availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline">Scheduling & Visualization</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Created an in-house calendar
+                                tool for better visualization. Along with the Lead Producer, established standard rules
+                                for event scheduling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Economy Design -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">04 • Economy Design &
+                    Progression</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Structuring Core Season
+                    Passes</h2>
+            </div>
+
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-surface-container-lowest p-8 md:p-12 rounded-lg ink-shadow">
+                <div class="flex flex-col gap-8">
+                    <div class="space-y-4">
+                        <h3 class="font-headline text-2xl font-bold text-on-surface">The Goal</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            Own the architecture for the core progression systems,specifically the Season Pass and
+                            Challenges framework. The mission was to move beyond arbitrary point scaling toward a
+                            <strong class="text-on-surface">data-backed model</strong> that optimized exact
+                            effort-to-reward ratios.
+                        </p>
+                    </div>
+
+                    <div class="bg-surface-container-low p-8 rounded-lg">
+                        <h3 class="font-headline text-xl font-bold text-primary mb-4">Impact & Results</h3>
+                        <div class="space-y-4 text-sm text-on-surface-variant leading-relaxed">
+                            <p>Implemented a highly cohort-responsive math model tailored directly against historical
+                                player velocities.</p>
+                            <p class="pl-4 border-l-[3px] border-primary-container"><strong class="text-on-surface">Real
+                                    KPI Uplift:</strong> The math restructuring yielded a significant percentage
+                                increase in both <strong class="text-on-surface">Season Pass Completion Rate</strong>
+                                and <strong class="text-on-surface">Feature Adoption</strong> across consecutive
+                                quarters.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">Execution</h3>
+
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">timeline</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline">Progression Modeling</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">A/B tested separate Excel models
+                                (Static vs Linear) to determine which pacing reduced psychological fatigue while
+                                offering meaningful, attainable milestones.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">analytics</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline">Cohort Velocity Analysis</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Built predictive systems mapping
+                                session frequency/length against XP output. Prototyped "XP Velocity" metrics to
+                                accurately forecast days-to-completion by user archtype.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">dashboard_customize</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline">Data Pipelines & Dashboards</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Spearheaded the integration of
+                                unified telemetry. Collaborated with the UX Lead to design the first studio-wide data
+                                dashboards, running daily Heatmap and Sankey diagram queries on onboarding flow.</p>
+                        </div>
+                    </div>
+                    <div class="pt-8 mt-4 border-t border-outline-variant/10">
+                        <figure>
+                            <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest border border-outline-variant/10">
+                                <img src="Files/MyWHoosh/MyWHooshSeasonPass.png" alt="Season Pass In-Game Flow"
+                                    class="w-full h-auto max-h-[800px] object-cover">
+                            </div>
+                            <figcaption class="mt-4 text-center text-xs font-label text-on-surface-variant tracking-wider uppercase font-bold">
+                                The Final Structured Season Pass Architecture
+                            </figcaption>
+                        </figure>
+
+                        <figure class="pt-12">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest border border-outline-variant/10">
+                                    <img src="Files/MyWHoosh/MyWhooshSeason Pass.png" alt="Season Pass Dashboard" class="w-full h-auto object-cover">
+                                </div>
+                                <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest border border-outline-variant/10">
+                                    <img src="Files/MyWHoosh/ExcelSeasonPass 1.png" alt="Excel Simulation Prediction" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+                            <figcaption class="mt-6 text-center text-xs font-label text-on-surface-variant tracking-wider uppercase font-bold">
+                                Image on left is dashboard, Image on right is excel simulation prediction which was pretty close
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Offline UX -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">05 • System Design &
+                    UX</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Solving "Offline"
+                    Disconnects in Esports</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-surface-container-low p-8 md:p-12 rounded-lg">
+                <!-- Challenge -->
+                <div
+                    class="lg:col-span-4 space-y-6 bg-surface-container-lowest p-8 rounded-lg ink-shadow h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-headline text-2xl font-bold text-on-surface mb-4">The Challenge</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            MyWhoosh operates as an MMO e-sport. A critical issue was handling <span
+                                class="text-on-surface font-semibold underline decoration-primary-container decoration-4 underline-offset-4">connection
+                                drops</span> during live competitive events. We needed to maintain competitive integrity
+                            while ensuring genuine players weren't unjustly punished.
+                        </p>
+                    </div>
+
+                    <div class="pt-6">
+                        <h3 class="font-headline text-xl font-bold text-primary mb-3">The Solution</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                            A custom "Offline UX" flow supported by an anti-cheat verification backend (the <strong
+                                class="text-on-surface">"WhooshPolice"</strong> drone), ensuring a highly resilient and
+                            fair esports environment.
+                        </p>
+                        <span class="material-symbols-outlined text-4xl text-primary/50">wifi_off</span>
+                    </div>
+                </div>
+
+                <!-- Approach -->
+                <div class="lg:col-span-8 space-y-8">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">Methodology</h3>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-on-surface font-bold font-headline mb-2 text-lg">Esports Competitive
+                                Analysis</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Conducted comprehensive analysis
+                                of offline tech systems in major titles (CS:GO, Valorant, LoL). Mapped the hardware
+                                chain (Bike &rarr; Game &rarr; Internet) to pinpoint exact failure points.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-on-surface font-bold font-headline mb-2 text-lg">Graceful Degradation
+                                Mechanics</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Designed a journey where offline
+                                play is permitted but strategically limited. E.g., drafting (slipstreaming) privileges
+                                are immediately revoked in offline mode to remove competitive advantages without
+                                interrupting the physical effort.</p>
+                        </div>
+
+                        <div class="bg-surface-container p-8 rounded-lg">
+                            <h4 class="text-on-surface font-bold mb-6 font-headline text-lg">UX & Telemetry Verification
+                            </h4>
+                            <div class="space-y-6 text-sm text-on-surface-variant">
+                                <div class="flex flex-col md:flex-row gap-4">
+                                    <span
+                                        class="text-primary font-bold w-24 flex-shrink-0 font-label uppercase text-[10px] tracking-widest">Reconnection</span>
+                                    <span><strong class="text-on-surface">Data Verification:</strong> The "WhooshPolice"
+                                        drone cross-references heart rate, Wattage/kg, and historical bounds to
+                                        instantly flag anomalies.</span>
+                                </div>
+                                <div class="flex flex-col md:flex-row gap-4">
+                                    <span
+                                        class="text-primary font-bold w-24 flex-shrink-0 font-label uppercase text-[10px] tracking-widest">Interface</span>
+                                    <span><strong class="text-on-surface">Reduced Panic:</strong> Replaced intrusive
+                                        modal popups with a smooth, persistent header indicator ("Reconnecting..."),
+                                        letting cyclists focus entirely on the physical race.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="pt-8">
+                <div class="rounded-lg overflow-hidden relative group ink-shadow bg-surface-container-lowest">
+                    <img src="Files/MyWHoosh/MyWHoosh_UX.png" alt="UX Redesign for Disconnected States"
+                        class="w-full h-auto object-cover">
+                </div>
+                <figcaption
+                    class="mt-6 text-center text-sm font-label text-on-surface-variant tracking-wider uppercase font-bold">
+                    In-Game UI comparing Online and Offline handling seamlessly.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Project Navigation -->
+        <div class="flex flex-col sm:flex-row justify-between items-center pt-24 pb-8 border-t border-outline-variant/10 mt-16 max-w-7xl mx-auto px-4 md:px-8 w-full gap-8">
+            <a href="COB.html" class="group flex flex-col items-start w-full sm:w-1/2 space-y-2 hover:scale-105 transition-transform">
+                <span class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Previous Project</span>
+                <span class="font-headline text-2xl font-black text-on-surface">Clash of Beasts</span>
+            </a>
+            
+            <a href="Hideout.html" class="group flex flex-col items-end w-full sm:w-1/2 space-y-2 hover:scale-105 transition-transform text-right">
+                <span class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Next Project</span>
+                <span class="font-headline text-2xl font-black text-on-surface">Hideout</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-12 bg-transparent border-t border-outline-variant/10">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 w-full gap-8">
+            <div
+                class="text-[#5b605f] font-['Be_Vietnam_Pro'] text-sm max-w-sm text-center md:text-left leading-relaxed">
+                © 2024 Dennchen Lama. Crafted with Mindful Analog principles.
+            </div>
+            <div class="flex gap-8">
+                <a href="mailto:Dennchenls@gmail.com"
+                    class="text-[#5b605f] hover:text-[#2f3333] transition-colors font-label text-sm font-bold uppercase tracking-widest">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

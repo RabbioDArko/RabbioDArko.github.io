@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pool Heroes Case Study | Dennchen Lama</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#f9f9f8",
+                        "on-surface": "#2f3333",
+                        "on-surface-variant": "#5b605f",
+                        "surface-container": "#eceeed",
+                        "surface-container-low": "#f3f4f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#dfe3e2",
+                        "primary": "#4958ac",
+                        "primary-container": "#96a5ff",
+                        "on-primary": "#faf8ff",
+                        "on-primary-container": "#0f2176",
+                        "secondary": "#006b64",
+                        "secondary-container": "#8ef4e9",
+                        "on-secondary-container": "#005c56",
+                        "tertiary": "#70557c",
+                        "tertiary-container": "#f1cefc",
+                        "on-tertiary-container": "#5d4369",
+                        "outline": "#777c7b",
+                        "outline-variant": "#afb3b2",
+                        "background": "#f9f9f8",
+                        "on-background": "#2f3333",
+                        "error": "#a8364b",
+                        "error-container": "#f97386",
+                        "on-error": "#fff7f7",
+                        "on-error-container": "#6e0523",
+                        "inverse-surface": "#0c0f0e",
+                        "inverse-on-surface": "#9c9d9c",
+                        "inverse-primary": "#96a5ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f9f9f8;
+            background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            background-attachment: fixed;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            background: rgba(249, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+
+        .ink-shadow {
+            box-shadow: 0 20px 40px rgba(15, 33, 118, 0.06);
+        }
+    </style>
+</head>
+
+<body class="font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="sticky top-0 z-50 w-full glass-nav">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4 w-full">
+            <a href="index.html"
+                class="flex items-center gap-2 font-label uppercase tracking-widest text-xs font-bold text-on-surface-variant hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                BACK
+            </a>
+            <div class="text-2xl font-black text-on-surface tracking-tighter font-headline">
+                Home
+            </div>
+            <a href="mailto:Dennchenls@gmail.com"
+                class="font-label uppercase tracking-widest text-xs font-bold text-primary hover:text-primary-container transition-all duration-300">
+                CONTACT
+            </a>
+        </div>
+    </nav>
+
+    <!-- Full Width Background Banner (Empty style as placeholder) -->
+    <div class="absolute top-0 left-0 w-full h-[40vh] md:h-[50vh] overflow-hidden -z-10 bg-surface-container-highest">
+        <!-- Gradient to blend into the page background -->
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-surface to-transparent"></div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-8 pt-24 md:pt-[25vh] pb-12 space-y-32 relative z-10">
+        <!-- Hero Section Content -->
+        <header class="space-y-12">
+            <div class="space-y-8">
+                <div class="flex flex-wrap gap-4">
+                    <span
+                        class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-[10px] font-bold tracking-widest font-label uppercase">Yesgnome</span>
+                    <span
+                        class="px-4 py-1.5 bg-surface-container text-on-surface-variant rounded-full text-[10px] font-bold tracking-widest font-label uppercase">2021</span>
+                </div>
+                <h1
+                    class="text-6xl md:text-8xl font-black font-headline text-on-surface tracking-tighter uppercase leading-none">
+                    Pool Heroes
+                </h1>
+
+                <p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-4xl leading-relaxed mt-8">
+                    One of my first f2p games where I had a chance to work from pre-production to post-production.
+                    Co-developed with MPL.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 mt-12 bg-surface-container-low p-8 rounded-lg">
+                    <div class="md:col-span-1 space-y-2">
+                        <h4 class="font-label text-xs text-on-surface-variant uppercase tracking-widest font-bold">Role
+                        </h4>
+                        <p class="text-on-surface font-semibold font-body">Game Designer</p>
+                    </div>
+                    <div class="md:col-span-3 space-y-2">
+                        <h4 class="font-label text-xs text-on-surface-variant uppercase tracking-widest font-bold">Core
+                            Disciplines</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="bg-surface-container-lowest ink-shadow text-on-surface-variant text-xs px-4 py-1.5 rounded-full font-semibold">System
+                                Design</span>
+                            <span
+                                class="bg-surface-container-lowest ink-shadow text-on-surface-variant text-xs px-4 py-1.5 rounded-full font-semibold">Economy
+                                Design</span>
+                            <span
+                                class="bg-surface-container-lowest ink-shadow text-on-surface-variant text-xs px-4 py-1.5 rounded-full font-semibold">UX
+                                Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section 1: System Design -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">01 • System
+                    Design</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Tuning Feel:
+                    Reverse-Engineering Pool Physics in Unity</h2>
+                <p class="text-sm font-label text-on-surface-variant tracking-wider uppercase font-bold mt-2">Technical
+                    Designer — responsible for gameplay physics</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-surface-container-low p-8 md:p-12 rounded-lg">
+                <!-- Challenge -->
+                <div
+                    class="lg:col-span-4 space-y-6 bg-surface-container-lowest p-8 rounded-lg ink-shadow h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-headline text-2xl font-bold text-on-surface mb-4">The Problem</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                            We were building a competitive pool game in a genre dominated by Miniclip's 8 Ball Pool.
+                            Players of that game had deeply internalized how a "correct" shot <em>feels</em> — cue
+                            force, ball roll speed, cushion bounce, friction decay. If our physics felt even slightly
+                            off, playtesters rejected it instantly, often without being able to articulate why.
+                        </p>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            The challenge wasn't to copy the physics 1:1 — it was to <span
+                                class="text-on-surface font-semibold underline decoration-primary-container decoration-4 underline-offset-4">decode
+                                what made the reference feel right</span>, then rebuild it in Unity's physics system
+                            with enough room to develop our own identity later.
+                        </p>
+                    </div>
+
+                    <div class="pt-8 mt-6">
+                        <h3 class="font-headline text-xl font-bold text-primary mb-3">The Outcome</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                            The final physics set passed blind playtests, players familiar with the genre said the game
+                            "felt right" without being told we'd benchmarked against a specific title. More importantly,
+                            the tuning was cleanly parameterized, so when the design team later wanted to introduce
+                            power-ups that altered physics (e.g., a "heavy ball" modifier), we could adjust individual
+                            curves without destabilizing the base feel.
+                        </p>
+                        <span class="material-symbols-outlined text-4xl text-primary/50">science</span>
+                    </div>
+                </div>
+
+                <!-- Approach -->
+                <div class="lg:col-span-8 space-y-8">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">The Approach</h3>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-on-surface font-bold font-headline mb-2 text-lg">1. Benchmarking by Feel &
+                                Frame</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">I played hundreds of shots in the
+                                reference game and recorded them, then broke the recordings into observable properties:
+                                time-to-stop, rebound angle loss on cushions, spin decay rate, and cue,power_to_distance
+                                curves. This gave me a rough target not code, but <em>behaviour curves</em> I could tune
+                                toward.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-on-surface font-bold font-headline mb-2 text-lg">2. Translating to Unity
+                            </h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Rather than treating physics
+                                as a single monolithic system, Our lead dev structured the tuning into <strong>five
+                                    distinct, modular components</strong> each owning a specific behaviour domain:</p>
+                            <div class="space-y-4 text-sm text-on-surface-variant mt-4">
+                                <div class="flex items-start gap-4">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-xl flex-shrink-0">commit</span>
+                                    <span><strong>CueStickSetting</strong> — <code>cueForceMin / cueForceMax</code> and
+                                        a custom <code>Power Curve</code> (AnimationCurve) mapping input hold-time to
+                                        applied impulse, giving a non-linear "wind-up" feel.</span>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-xl flex-shrink-0">commit</span>
+                                    <span><strong>BallPhysics</strong> — <code>cueBallMass</code>,
+                                        <code>ballMass</code>, <code>restitution</code>, and <code>Drag</code> tuned
+                                        separately for the cue ball vs. object balls, since the cue ball behaves
+                                        differently after contact.</span>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-xl flex-shrink-0">commit</span>
+                                    <span><strong>SpinSys</strong> — spin treated as a first-class mechanic with its own
+                                        component, separate from linear physics drag. This is where top-spin, back-spin,
+                                        and side-spin decay rates lived.</span>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-xl flex-shrink-0">commit</span>
+                                    <span><strong>BallCush</strong> — <code>railRestitution</code>,
+                                        <code>railFriction</code>, and <code>railSpinTransfer</code> per cushion
+                                        surface. <code>railSpinTransfer</code> specifically controls how spin transfers
+                                        through a cushion bounce — one of the parameters most games get wrong.</span>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-xl flex-shrink-0">commit</span>
+                                    <span><strong>Game Feel</strong> — a dedicated block for tuning <em>feel</em>
+                                        independent of simulation accuracy (camera shake thresholds, impact feedback
+                                        timing, pocket magnet radius).</span>
+                                </div>
+                            </div>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mt-4">Separating
+                                <code>Game Feel</code> from physics was a deliberate design decision: it meant we could
+                                tune the simulation to be accurate <em>and</em> tune the experience to feel satisfying —
+                                without those two concerns fighting each other.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-on-surface font-bold font-headline mb-2 text-lg">3. Iteration with
+                                Playtesting</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">I ran rapid iteration loops:
+                                tweak values → record 10 standard shots → playtest → compare to reference recordings. I
+                                kept a tuning log tracking each parameter change and the qualitative feedback it
+                                produced.</p>
+                        </div>
+
+                        <figure class="mt-6 flex flex-col items-center">
+                            <div class="rounded-lg overflow-hidden ink-shadow bg-surface-container-lowest w-full">
+                                <img src="Files/PoolHeroes/PoolHeroUnityConfig.png"
+                                    alt="Unity Screenshot showing physics config" class="w-full h-auto object-cover">
+                            </div>
+                            <figcaption
+                                class="mt-4 text-center text-xs font-label text-on-surface-variant tracking-wider uppercase font-bold">
+                                Unity Screenshot showing physics config used for tuning feel, (Values Redacted due to
+                                NDA)
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Economy Design -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">02 • Economy
+                    Design</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Designing the Meta: Loot
+                    Boxes, Progression & Monte Carlo Validation</h2>
+                <p class="text-sm font-label text-on-surface-variant tracking-wider uppercase font-bold mt-2"></p>
+            </div>
+
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-surface-container-lowest p-8 md:p-12 rounded-lg ink-shadow">
+                <div class="flex flex-col gap-8">
+                    <div class="space-y-4">
+                        <h3 class="font-headline text-2xl font-bold text-on-surface">The Problem</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                            The game needed a full meta layer loot boxes, player progression, and achievements that
+                            would sit on top of the core pool gameplay. This was my first time building economy
+                            simulations, I had to learn the craft while delivering production-ready outputs.
+                        </p>
+                    </div>
+
+                    <div class="bg-surface-container-low p-8 rounded-lg mt-auto">
+                        <h3 class="font-headline text-xl font-bold text-primary mb-4">The Outcome</h3>
+                        <div class="space-y-4 text-sm text-on-surface-variant leading-relaxed">
+                            <p>The economy shipped with a validated foundation — every drop rate, currency faucet, and
+                                progression milestone had been stress-tested against thousands of simulated sessions
+                                before it ever touched a player. The Monte Carlo approach became a reusable tool; I used
+                                the same simulation framework for value predictions across the project's remaining
+                                systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <h3 class="font-headline text-2xl font-bold text-on-surface">The Approach</h3>
+
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">account_tree</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline text-lg">1. Structuring the Meta
+                                Loop</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-3">I designed three
+                                interlocking systems:</p>
+                            <ul class="list-disc list-inside text-sm text-on-surface-variant space-y-2 ml-2">
+                                <li><strong>Loot Boxes:</strong> I defined item pools, rarity tiers, and drop-rate
+                                    tables, working closely with the Producer who owned the presentation layer.</li>
+                                <li><strong>Progression:</strong> an XP-based leveling curve with milestone unlocks that
+                                    gave players a reason to keep playing beyond individual matches.</li>
+                                <li><strong>Achievements:</strong> Designed to nudge players toward behaviours that
+                                    deepened engagement (e.g., "Win 5 games using bank shots").</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start mt-6">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">monitoring</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline text-lg">2. Simulating the Economy
+                                in Excel</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-4">I needed to answer questions
+                                like: <em>"How many boxes does a median player open before they complete a
+                                    collection?"</em> and <em>"At what level does the soft currency faucet outpace the
+                                    sinks?"</em></p>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-3">This was my first time
+                                building economy simulations, so I started from fundamentals. I taught myself Monte
+                                Carlo methods by building small simulations for dice rolls and card draws, then scaled
+                                up to our actual loot tables. The final simulation modeled:</p>
+                            <ul class="list-disc list-inside text-sm text-on-surface-variant space-y-2 ml-2">
+                                <li><strong>10,000 synthetic player sessions</strong> with varied play-frequency
+                                    profiles.</li>
+                                <li><strong>Expected time-to-collection</strong> curves for each rarity tier.</li>
+                                <li><strong>Currency inflow vs. outflow</strong> over a 90-day projection window.</li>
+                            </ul>
+                            <div
+                                class="bg-surface-container p-6 rounded-lg text-sm text-on-surface-variant font-label italic mt-6 flex items-center justify-center min-h-[100px]">
+                                📷 [Insert: screenshot/link of Monte Carlo simulation spreadsheet showing distribution
+                                curves]
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start mt-6">
+                        <div
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+                            <span class="material-symbols-outlined">handshake</span>
+                        </div>
+                        <div>
+                            <h4 class="text-on-surface font-bold mb-2 font-headline text-lg">3. Collaborative Balancing
+                            </h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">The Producer and I worked as a
+                                pair: I owned the numbers and simulation outputs, they owned player sentiment and
+                                presentation. When the sim showed a drop-rate needed adjusting, we'd discuss whether the
+                                fix was mathematical (change the rate) or perceptual (change the animation pacing to
+                                make rare drops feel more dramatic).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: UX Design -->
+        <section class="space-y-8">
+            <div class="space-y-2">
+                <span class="font-label text-xs text-primary uppercase tracking-widest font-bold">03 • UX Design</span>
+                <h2 class="font-headline text-4xl font-black text-on-surface tracking-tight">Mapping the Machine: UX
+                    Wireframes as a Production Tool</h2>
+                <p class="text-sm font-label text-on-surface-variant tracking-wider uppercase font-bold mt-2">Technical
+                    Designer — responsible for UX flows and production mapping</p>
+            </div>
+
+            <div class="bg-surface-container-lowest ink-shadow rounded-lg overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div
+                        class="p-8 md:p-12 md:bg-surface-container-lowest bg-surface-container-lowest flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <h3 class="font-headline text-2xl font-bold text-on-surface mb-2">The Problem</h3>
+                            <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                Screens were getting built, then rebuilt when someone realized the flow didn't account
+                                for an edge case. Features got scoped based on a written spec that different people read
+                                differently. We were spending too much time reworking and not enough time building.
+                            </p>
+                            <div class="pt-8 mb-8">
+                                <div
+                                    class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary text-3xl">
+                                    <span class="material-symbols-outlined">design_services</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 mt-4 bg-surface-container-low p-8 rounded-lg">
+                            <h3 class="font-headline text-xl font-bold text-primary mb-3">The Outcome</h3>
+                            <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                The wireframe-first process smoothed out production across all my projects at the
+                                studio. Features went from spec to implementation with significantly fewer rounds of
+                                revision, and new team members could onboard by reading the flow instead of sitting
+                                through hours of verbal walkthroughs. It was a simple practice, but it compounded —
+                                every hour spent mapping saved multiples in rework downstream.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-8 md:p-12 bg-surface-container-low space-y-8 relative">
+                        <div
+                            class="absolute -bottom-10 -right-10 text-9xl text-surface-container-highest material-symbols-outlined font-light pointer-events-none opacity-50">
+                            account_tree</div>
+
+                        <div class="relative z-10">
+                            <h3 class="font-headline text-2xl font-bold text-primary mb-6">The Approach</h3>
+                            <div class="space-y-8 text-sm text-on-surface-variant">
+                                <div>
+                                    <h4 class="text-on-surface font-bold font-headline mb-3 text-lg">Full Core-Loop
+                                        Wireframe Mapping</h4>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Before any feature
+                                        went into development, I created comprehensive UX wireframe flows that mapped
+                                        the <strong>entire core game</strong> — from first launch to endgame loops.
+                                        These weren't just pretty screens; they were functional maps that showed:</p>
+                                    <ul class="list-none space-y-4">
+                                        <li class="flex items-start gap-4">
+                                            <span
+                                                class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span>
+                                            <span><strong>Every screen state</strong> - default, loading, empty, error,
+                                                and success.</span>
+                                        </li>
+                                        <li class="flex items-start gap-4">
+                                            <span
+                                                class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span>
+                                            <span><strong>Every transition</strong> - what triggers it, where it goes,
+                                                what data it carries.</span>
+                                        </li>
+                                        <li class="flex items-start gap-4">
+                                            <span
+                                                class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span>
+                                            <span><strong>Edge cases</strong> - what happens on network failure? What if
+                                                the player's inventory is full? What if a timed event expires
+                                                mid-flow?</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pt-8 mt-4">
+                                    <h4 class="text-on-surface font-bold font-headline mb-3 text-lg">Using Wireframes as
+                                        a Shared Language</h4>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">The wireframes became the
+                                        single source of truth for cross-functional conversations. When an engineer
+                                        asked "what happens if...?", the answer was on the flow. When the Producer
+                                        wanted to add a new monetization touchpoint, we could see exactly where it fit
+                                        (or didn't) in the existing map. It eliminated the "I thought you meant..."
+                                        class of problems almost entirely.</p>
+                                </div>
+
+                                <div class="mt-6 space-y-8">
+                                    <figure class="flex flex-col items-center">
+                                        <div
+                                            class="rounded-lg overflow-hidden ink-shadow bg-surface-container-lowest w-full max-w-sm mx-auto">
+                                            <img src="Files/PoolHeroes/PoolHeroesBOX.png" alt="Wireframe Box"
+                                                class="w-full h-auto object-contain">
+                                        </div>
+                                    </figure>
+                                    <figure class="flex flex-col items-center">
+                                        <div
+                                            class="rounded-lg overflow-hidden ink-shadow bg-surface-container-lowest w-full max-w-sm mx-auto">
+                                            <img src="Files/PoolHeroes/PoolHeroesWagerRoom.png"
+                                                alt="Wireframe Wager Room" class="w-full h-auto object-contain">
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Navigation -->
+        <div class="flex flex-col sm:flex-row justify-between items-center pt-24 pb-8 border-t border-outline-variant/10 mt-16 max-w-7xl mx-auto px-4 md:px-8 w-full gap-8">
+            <a href="Hideout.html" class="group flex flex-col items-start w-full sm:w-1/2 space-y-2 hover:scale-105 transition-transform">
+                <span class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Previous Project</span>
+                <span class="font-headline text-2xl font-black text-on-surface">Hideout</span>
+            </a>
+            
+            <a href="Bugbattle.html" class="group flex flex-col items-end w-full sm:w-1/2 space-y-2 hover:scale-105 transition-transform text-right">
+                <span class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Next Project</span>
+                <span class="font-headline text-2xl font-black text-on-surface">Bug Battle</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-12 bg-transparent border-t-0 bg-surface-container-low">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 w-full gap-8">
+            <div
+                class="text-[#5b605f] font-['Be_Vietnam_Pro'] text-sm max-w-sm text-center md:text-left leading-relaxed">
+                © 2024 Dennchen Lama. Crafted with Mindful Analog principles.
+            </div>
+            <div class="flex gap-8">
+                <a href="mailto:Dennchenls@gmail.com"
+                    class="text-[#5b605f] hover:text-[#2f3333] transition-colors font-label text-sm font-bold uppercase tracking-widest">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
