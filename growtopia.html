@@ -79,9 +79,9 @@
                 <span class="material-symbols-outlined text-sm">arrow_back</span>
                 BACK 
             </a>
-            <div class="text-2xl font-black text-on-surface tracking-tighter font-headline">
+            <a href="index.html" class="text-2xl font-black text-on-surface tracking-tighter font-headline hover:text-primary transition-colors">
                 Home
-            </div>
+            </a>
             <a href="mailto:Dennchenls@gmail.com" class="font-label uppercase tracking-widest text-xs font-bold text-primary hover:text-primary-container transition-all duration-300">
                 CONTACT
             </a>
@@ -318,14 +318,24 @@
 
         <!-- Project Navigation -->
         <div class="flex flex-col sm:flex-row justify-between items-center pt-24 pb-8 border-t border-outline-variant/10 mt-16 max-w-7xl mx-auto px-4 md:px-8 w-full gap-8">
-            <a href="Bugbattle.html" class="group flex flex-col items-start w-full sm:w-1/2 space-y-2 hover:scale-105 transition-transform">
-                <span class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Previous Project</span>
-                <span class="font-headline text-2xl font-black text-on-surface">Bug Battle</span>
+            <a href="Bugbattle.html" class="group flex flex-row items-center w-full sm:w-1/2 gap-4 md:gap-6 hover:-translate-x-2 transition-transform duration-500 ease-out">
+                <div class="w-16 h-16 md:w-24 md:h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-surface-150">
+                    <img src="Files/Thumbnail/Bug BattleThumbnail New.jpg" alt="Bug Battle" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 ease-out">
+                </div>
+                <div class="flex flex-col items-start space-y-1 md:space-y-2">
+                    <span class="text-on-surface-variant font-label text-[10px] md:text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Previous Project</span>
+                    <span class="font-headline text-lg md:text-2xl font-black text-on-surface transition-colors">Bug Battle</span>
+                </div>
             </a>
             
-            <a href="COB.html" class="group flex flex-col items-end w-full sm:w-1/2 space-y-2 hover:scale-105 transition-transform text-right">
-                <span class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Next Project</span>
-                <span class="font-headline text-2xl font-black text-on-surface">Clash of Beasts</span>
+            <a href="COB.html" class="group flex flex-row items-center justify-end w-full sm:w-1/2 gap-4 md:gap-6 hover:translate-x-2 transition-transform duration-500 ease-out text-right">
+                <div class="flex flex-col items-end space-y-1 md:space-y-2">
+                    <span class="text-on-surface-variant font-label text-[10px] md:text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Next Project</span>
+                    <span class="font-headline text-lg md:text-2xl font-black text-on-surface transition-colors">Clash of Beasts</span>
+                </div>
+                <div class="w-16 h-16 md:w-24 md:h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-surface-150">
+                    <img src="Files/COB/COBThumbnailUbisoft.png" alt="Clash of Beasts" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 ease-out">
+                </div>
             </a>
         </div>
     </main>
